@@ -1,0 +1,42 @@
+.privacy-policy {
+    display: flex;   
+    margin-top: -80px;
+    font-family: 'IBM Plex Sans', sans-serif; 
+    flex-direction: column;
+    background-color: rgb(211, 251, 211);
+
+    
+}
+
+.privacy-policy-container {
+    display: flex;
+    margin: 100px auto;
+    width: 80%;
+    flex-direction: column;
+
+}
+
+.privacy-policy-container ul {
+    margin: 10px;
+    text-align: start;
+}
+
+
+
+.privacy-policy-container{
+    text-align: left;
+}
+
+.privacy-policy h1, h2, h3 {
+    margin: 2rem auto;
+}
+
+.privacy-policy li {
+    justify-content: start;
+}
+
+@media (max-width:810px) {
+    .privacy-policy{
+        margin-top: -80px;
+    }
+}

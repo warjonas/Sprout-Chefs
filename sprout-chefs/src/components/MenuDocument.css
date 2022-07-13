@@ -1,0 +1,137 @@
+
+  
+
+
+.takeaway-menu {
+ 
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: fit-content;
+    background: url('../../public/Images/SC-44.jpg') center center/cover no-repeat;
+    margin-top: -80px;
+  }
+  
+  .takeaway-menu-container {
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+    width:80%;
+    height: inherit; 
+    margin: 150px auto 0;
+    text-align: center;
+  
+  
+  }
+  
+  .takeaway-menu-container h1 {
+    color: #fff;
+    margin-bottom: 20px;
+    
+  }
+  .takeaway-menu-img {
+    box-shadow: 0 6px  20px rgba(56, 125, 255, 0.017);
+    margin: 0 2rem 1rem;
+  
+  }
+  
+  .takeaway-menu img {
+    width: 100%;
+    height: 800px;
+    border-radius: 10px;
+    
+  
+  }
+
+  .takeaway-menu-img-wrap{
+    display: flex;
+    
+  }
+
+
+.menu-btns {
+    margin: 20px 5px;
+    padding: 8px 20px;    
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: #84c441;
+    color: #fff;
+}
+
+.menu-btns:hover{
+    color: #fff;
+    border: 2px;
+    border-color: #fff;
+    background: transparent;
+    transition: all 0.3s ease-out;
+
+}
+
+.download {
+   text-decoration: none;
+   width: 200px;
+   border-radius: 50px;
+   margin: 20px 0 10px;
+   background-color: #84c441;
+   padding: 8px 20px;
+   color: #fff;
+   
+}
+
+.download:hover{
+    color: #fff;
+    border-style: solid;   
+    border: 3px #fff;
+    background: transparent;
+    transition: all 0.3s ease-out;
+
+}
+
+.page-nav {
+    
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.page-nav p {
+    margin: 10px 5px 0px 5px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 820px) {
+
+    .Menu {
+        justify-content: center;
+    }
+
+    .takeaway-menu-img-wrap{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .takeaway-menu img{
+        height: 500px;
+        margin-bottom: 10px;
+    }
+
+    .takeaway-menu-img {
+        box-shadow: 0 6px  20px rgba(56, 125, 255, 0.017);
+        margin: 0;
+      
+      }
+
+      .takeaway-menu-container{
+        margin: 100px auto 0;
+      }
+
+    
+    
+}
+
+

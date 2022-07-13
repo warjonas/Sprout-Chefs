@@ -1,0 +1,171 @@
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1500px;
+    margin: 40px auto;
+    padding: 20px 10px;
+    justify-content: space-between;
+    width: 100%;
+    max-height: fit-content;
+}
+
+.gallery-container > h1 {
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+.gallery-images{
+    display: grid;
+    grid-template-columns: [first] 25% [second] 25% [third] 25% [fourth] 25% [end];
+    grid-template-rows: [row1-start] 200px [line2] 200px [line3] 250px [line4] 400px [line5] 250px [last-line];
+    width: 90%;
+    max-height: fit-content;
+    justify-content: center;
+}
+
+.pic {
+    border-radius: 10px;
+    background-color: #85c441;
+    margin: 10px;
+    height: 200px;
+    box-shadow: 0 2px 6px rgba(0,0,0, 0.6);
+
+}
+
+.pic-a { 
+    background: url('../../public/Images/SC-30.jpg') center center/cover no-repeat;
+    grid-column-start: 1;
+    grid-column-end:span third;
+
+    grid-row-start: 1;
+    grid-row-end: span line3;
+    height: inherit;   
+
+}
+
+.pic-b {
+    background: url('../../public/Images/SC-46.jpg') center center/cover no-repeat;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: line2;
+    height: inherit;
+}
+
+.pic-c {
+    background: url('../../public/Images/SC-50.jpg') center center/cover no-repeat;
+
+    grid-column-start: 3;
+
+    grid-row-start: 2;    
+    grid-row-end: span line4;
+
+    height: inherit;
+}
+
+.pic-d {
+    background: url('../../public/Images/SC-25.jpg') center center/cover no-repeat;
+
+    
+    grid-column-start: 1 ;
+    grid-column-end: second;
+
+    grid-row: 3;
+
+    height: inherit;
+}
+
+.pic-e {
+    background: url('../../public/Images/SC-2.jpg') center center/cover no-repeat;
+
+    grid-column-start: 2 ;
+    grid-column-end: second;
+
+    grid-row: 3;
+
+    height: inherit;
+}
+
+.pic-f {
+    background: url('../../public/Images/SC-14.jpg') center center/cover no-repeat;
+    grid-column-start:1;
+    grid-column-end:second ;
+    height: inherit;
+    
+}
+
+.pic-g {
+    background: url('../../public/Images/SC-33.jpg') center center/cover no-repeat;
+
+    grid-column-start: 2;
+    grid-column-end: fourth;
+
+    grid-row: 4;
+    height: inherit;
+}
+
+.pic-h {
+    background: url('../../public/Images/SC-44.jpg') center center/cover no-repeat;
+
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: span line3;
+    height: inherit;
+}
+
+.pic-i {
+    background: url('../../public/Images/SC-18.jpg') center center/cover no-repeat;
+
+    grid-column-start: 4;
+
+    grid-row-start:3;
+    height: inherit;
+}
+
+.pic-j {
+    background: url('../../public/Images/SC-28.jpg') center center/cover no-repeat;
+
+    grid-column: 4 ;
+    grid-row-start:4;
+    
+    height: inherit;
+}
+
+
+.pic-k {
+    background: url('../../public/Images/SC-32.jpg') center center/cover no-repeat;
+
+    grid-column-start: 3;
+    grid-column-end: span end;
+
+    height: inherit;
+}
+
+.pic-l {
+    background: url('../../public/Images/SC-31.jpg') center center/cover no-repeat;
+    grid-column-start: 1;
+    grid-column-end:  third;
+
+    grid-row: 5;
+
+    height: inherit;
+}
+
+
+@media screen and (max-width:800px) {
+    .gallery-images{
+        display: grid;
+        grid-template-columns: [first] 25% [second] 25% [third]25% [fourth] 25% [end];
+        grid-template-rows: [row1-start] 100px [line2] 100px [line3] 100px [line4] 100px [line5] 100px [last-line];
+        width: 90%;
+        max-height: fit-content;
+        justify-content: center;
+    }
+
+    .pic {
+        margin: 5px;
+    }
+}
